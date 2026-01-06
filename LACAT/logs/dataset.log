@@ -1,0 +1,1101 @@
+2026-01-05 20:53:00,595 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-01-05 20:53:00,595 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-01-05 20:53:00,595 - faiss.loader - INFO - Loading faiss.
+2026-01-05 20:53:00,655 - faiss.loader - INFO - Successfully loaded faiss.
+2026-01-05 20:54:03,511 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-01-05 20:54:03,511 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-01-05 20:54:03,511 - faiss.loader - INFO - Loading faiss.
+2026-01-05 20:54:03,537 - faiss.loader - INFO - Successfully loaded faiss.
+2026-01-05 20:54:03,544 - __main__ - ERROR - 加载配置失败: [Errno 2] No such file or directory: 'config/config.yaml'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/main.py", line 42, in load_config
+    with open(config_path, 'r', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'config/config.yaml'
+2026-01-05 20:57:02,787 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-01-05 20:57:02,787 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-01-05 20:57:02,788 - faiss.loader - INFO - Loading faiss.
+2026-01-05 20:57:02,839 - faiss.loader - INFO - Successfully loaded faiss.
+2026-01-05 20:57:02,859 - __main__ - ERROR - 加载配置失败: [Errno 2] No such file or directory: 'config/config.yaml'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/main.py", line 42, in load_config
+    with open(config_path, 'r', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'config/config.yaml'
+2026-01-05 21:03:33,264 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-01-05 21:03:33,264 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-01-05 21:03:33,264 - faiss.loader - INFO - Loading faiss.
+2026-01-05 21:03:33,292 - faiss.loader - INFO - Successfully loaded faiss.
+2026-01-05 21:03:33,301 - __main__ - ERROR - 加载配置失败: [Errno 2] No such file or directory: 'config/config.yaml'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/main.py", line 42, in load_config
+    with open(config_path, 'r', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'config/config.yaml'
+2026-01-05 21:07:33,435 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-01-05 21:07:33,435 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-01-05 21:07:33,436 - faiss.loader - INFO - Loading faiss.
+2026-01-05 21:07:33,463 - faiss.loader - INFO - Successfully loaded faiss.
+2026-01-05 21:07:33,472 - __main__ - ERROR - 加载配置失败: [Errno 2] No such file or directory: 'config/config.yaml'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/main.py", line 42, in load_config
+    with open(config_path, 'r', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'config/config.yaml'
+2026-01-05 21:07:33,474 - __main__ - INFO - 使用默认配置
+2026-01-05 21:07:33,503 - __main__ - INFO - 随机种子设置为: 42
+2026-01-05 21:07:33,503 - __main__ - INFO - 创建运行目录: results/moocradar/run_20260105_210733
+2026-01-05 21:07:47,916 - src.dataset.cat_dataset - INFO - 数据加载成功，学生数: 4072，问题数: 528，概念数: 35
+2026-01-05 21:07:47,917 - src.dataset.cat_dataset - INFO - 数据分割完成，训练集: 3257，验证集: 407，测试集: 408
+2026-01-05 21:07:47,917 - src.dataset.cat_dataset - INFO - 数据集初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:07:47,917 - __main__ - INFO - 数据集 moocradar 加载成功
+2026-01-05 21:07:47,917 - src.strategies.ada_strategy - INFO - 初始化自适应策略，使用模型: gpt-3.5-turbo
+2026-01-05 21:07:47,917 - __main__ - INFO - 开始运行自适应测试策略: ADA
+2026-01-05 21:07:48,641 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:07:49,942 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:07:49,943 - src.models.irt_model - ERROR - 加载模型失败: [Errno 2] No such file or directory: 'ckpt/moocradar/irt.pt'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/models/irt_model.py", line 265, in adaptest_load
+    checkpoint = torch.load(model_path, map_location=self.device)
+  File "/home/Q24301218./anaconda3/envs/GenAL/lib/python3.10/site-packages/torch/serialization.py", line 1319, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "/home/Q24301218./anaconda3/envs/GenAL/lib/python3.10/site-packages/torch/serialization.py", line 659, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/Q24301218./anaconda3/envs/GenAL/lib/python3.10/site-packages/torch/serialization.py", line 640, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'ckpt/moocradar/irt.pt'
+2026-01-05 21:49:58,946 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-01-05 21:49:58,946 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-01-05 21:49:58,946 - faiss.loader - INFO - Loading faiss.
+2026-01-05 21:49:58,988 - faiss.loader - INFO - Successfully loaded faiss.
+2026-01-05 21:49:58,997 - __main__ - ERROR - 加载配置失败: [Errno 2] No such file or directory: 'config/config.yaml'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/main.py", line 42, in load_config
+    with open(config_path, 'r', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'config/config.yaml'
+2026-01-05 21:49:58,998 - __main__ - INFO - 使用默认配置
+2026-01-05 21:49:59,034 - __main__ - INFO - 随机种子设置为: 42
+2026-01-05 21:49:59,035 - __main__ - INFO - 创建运行目录: results/moocradar/run_20260105_214959
+2026-01-05 21:50:14,143 - src.dataset.cat_dataset - INFO - 数据加载成功，学生数: 4072，问题数: 528，概念数: 35
+2026-01-05 21:50:14,143 - src.dataset.cat_dataset - INFO - 数据分割完成，训练集: 3257，验证集: 407，测试集: 408
+2026-01-05 21:50:14,143 - src.dataset.cat_dataset - INFO - 数据集初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:50:14,144 - __main__ - INFO - 数据集 moocradar 加载成功
+2026-01-05 21:50:14,144 - src.strategies.ada_strategy - INFO - 初始化自适应策略，使用模型: gpt-3.5-turbo
+2026-01-05 21:50:14,144 - __main__ - INFO - 开始运行自适应测试策略: ADA
+2026-01-05 21:50:14,852 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:50:16,002 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:50:16,008 - src.models.irt_model - ERROR - 加载模型失败: Error(s) in loading state_dict for IRTNet:
+	Missing key(s) in state_dict: "theta.weight". 
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/models/irt_model.py", line 266, in adaptest_load
+    self.model.load_state_dict(checkpoint)
+  File "/home/Q24301218./anaconda3/envs/GenAL/lib/python3.10/site-packages/torch/nn/modules/module.py", line 2584, in load_state_dict
+    raise RuntimeError(
+RuntimeError: Error(s) in loading state_dict for IRTNet:
+	Missing key(s) in state_dict: "theta.weight". 
+2026-01-05 21:53:29,005 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-01-05 21:53:29,006 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-01-05 21:53:29,006 - faiss.loader - INFO - Loading faiss.
+2026-01-05 21:53:29,029 - faiss.loader - INFO - Successfully loaded faiss.
+2026-01-05 21:53:29,037 - __main__ - ERROR - 加载配置失败: [Errno 2] No such file or directory: 'config/config.yaml'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/main.py", line 42, in load_config
+    with open(config_path, 'r', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'config/config.yaml'
+2026-01-05 21:53:29,038 - __main__ - INFO - 使用默认配置
+2026-01-05 21:53:29,069 - __main__ - INFO - 随机种子设置为: 42
+2026-01-05 21:53:29,070 - __main__ - INFO - 创建运行目录: results/moocradar/run_20260105_215329
+2026-01-05 21:53:42,933 - src.dataset.cat_dataset - INFO - 数据加载成功，学生数: 4072，问题数: 528，概念数: 35
+2026-01-05 21:53:42,933 - src.dataset.cat_dataset - INFO - 数据分割完成，训练集: 3257，验证集: 407，测试集: 408
+2026-01-05 21:53:42,933 - src.dataset.cat_dataset - INFO - 数据集初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:42,933 - __main__ - INFO - 数据集 moocradar 加载成功
+2026-01-05 21:53:42,933 - src.strategies.ada_strategy - INFO - 初始化自适应策略，使用模型: gpt-3.5-turbo
+2026-01-05 21:53:42,933 - __main__ - INFO - 开始运行自适应测试策略: ADA
+2026-01-05 21:53:43,564 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:44,794 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:44,800 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:44,800 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:44,800 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_0，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:44,849 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:44,849 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:44,849 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:44,849 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:44,849 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:44,849 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:44,849 - src.agents.adaptive_agent - INFO - 自适应代理 ada_0 初始化完成
+2026-01-05 21:53:44,849 - src.agents.adaptive_agent - INFO - 开始为学生 0 运行评估 #1, 时间: 2026-01-05 21:53:44.849961
+2026-01-05 21:53:44,850 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:44,910 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:44,919 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:44,925 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:44,925 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:44,925 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_1，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:44,934 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:44,934 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:44,934 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:44,934 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:44,934 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:44,934 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:44,934 - src.agents.adaptive_agent - INFO - 自适应代理 ada_1 初始化完成
+2026-01-05 21:53:44,937 - src.agents.adaptive_agent - INFO - 开始为学生 1 运行评估 #1, 时间: 2026-01-05 21:53:44.937957
+2026-01-05 21:53:44,938 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:44,994 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:45,002 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:45,008 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:45,008 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:45,008 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_2，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:45,016 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:45,017 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:45,017 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:45,017 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:45,017 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:45,017 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:45,017 - src.agents.adaptive_agent - INFO - 自适应代理 ada_2 初始化完成
+2026-01-05 21:53:45,020 - src.agents.adaptive_agent - INFO - 开始为学生 2 运行评估 #1, 时间: 2026-01-05 21:53:45.020501
+2026-01-05 21:53:45,020 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:45,076 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:45,085 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:45,091 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:45,091 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:45,091 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_3，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:45,099 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:45,099 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:45,099 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:45,099 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:45,099 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:45,099 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:45,099 - src.agents.adaptive_agent - INFO - 自适应代理 ada_3 初始化完成
+2026-01-05 21:53:45,103 - src.agents.adaptive_agent - INFO - 开始为学生 3 运行评估 #1, 时间: 2026-01-05 21:53:45.103223
+2026-01-05 21:53:45,103 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:45,159 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:45,167 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:45,173 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:45,173 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:45,173 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_4，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:45,181 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:45,182 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:45,182 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:45,182 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:45,182 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:45,182 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:45,182 - src.agents.adaptive_agent - INFO - 自适应代理 ada_4 初始化完成
+2026-01-05 21:53:45,186 - src.agents.adaptive_agent - INFO - 开始为学生 4 运行评估 #1, 时间: 2026-01-05 21:53:45.185991
+2026-01-05 21:53:45,186 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:45,242 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:45,250 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:45,256 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:45,256 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:45,256 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_5，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:45,265 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:45,265 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:45,265 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:45,265 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:45,265 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:45,265 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:45,265 - src.agents.adaptive_agent - INFO - 自适应代理 ada_5 初始化完成
+2026-01-05 21:53:45,269 - src.agents.adaptive_agent - INFO - 开始为学生 5 运行评估 #1, 时间: 2026-01-05 21:53:45.269353
+2026-01-05 21:53:45,269 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:45,326 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:45,333 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:45,339 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:45,339 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:45,339 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_6，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:45,347 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:45,347 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:45,347 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:45,347 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:45,348 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:45,348 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:45,348 - src.agents.adaptive_agent - INFO - 自适应代理 ada_6 初始化完成
+2026-01-05 21:53:45,351 - src.agents.adaptive_agent - INFO - 开始为学生 6 运行评估 #1, 时间: 2026-01-05 21:53:45.351261
+2026-01-05 21:53:45,351 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:45,405 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:45,413 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:45,414 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:45,415 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:45,415 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_7，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:45,423 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:45,423 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:45,423 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:45,423 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:45,423 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:45,423 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:45,423 - src.agents.adaptive_agent - INFO - 自适应代理 ada_7 初始化完成
+2026-01-05 21:53:45,426 - src.agents.adaptive_agent - INFO - 开始为学生 7 运行评估 #1, 时间: 2026-01-05 21:53:45.426947
+2026-01-05 21:53:45,427 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:45,483 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:45,491 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:45,497 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:45,497 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:45,497 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_8，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:45,505 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:45,505 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:45,505 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:45,505 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:45,505 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:45,505 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:45,505 - src.agents.adaptive_agent - INFO - 自适应代理 ada_8 初始化完成
+2026-01-05 21:53:45,509 - src.agents.adaptive_agent - INFO - 开始为学生 8 运行评估 #1, 时间: 2026-01-05 21:53:45.509809
+2026-01-05 21:53:45,510 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:45,565 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:45,573 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:45,579 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:45,579 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:45,579 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_9，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:45,587 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:45,587 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:45,587 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:45,587 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:45,587 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:45,587 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:45,587 - src.agents.adaptive_agent - INFO - 自适应代理 ada_9 初始化完成
+2026-01-05 21:53:45,591 - src.agents.adaptive_agent - INFO - 开始为学生 9 运行评估 #1, 时间: 2026-01-05 21:53:45.591583
+2026-01-05 21:53:45,592 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:45,646 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:45,655 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:45,661 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:45,661 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:45,661 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_10，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:45,669 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:45,670 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:45,670 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:45,670 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:45,670 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:45,670 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:45,670 - src.agents.adaptive_agent - INFO - 自适应代理 ada_10 初始化完成
+2026-01-05 21:53:45,674 - src.agents.adaptive_agent - INFO - 开始为学生 10 运行评估 #1, 时间: 2026-01-05 21:53:45.673967
+2026-01-05 21:53:45,674 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:45,728 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:45,736 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:45,742 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:45,742 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:45,742 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_11，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:45,750 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:45,750 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:45,751 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:45,751 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:45,751 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:45,751 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:45,751 - src.agents.adaptive_agent - INFO - 自适应代理 ada_11 初始化完成
+2026-01-05 21:53:45,755 - src.agents.adaptive_agent - INFO - 开始为学生 11 运行评估 #1, 时间: 2026-01-05 21:53:45.754981
+2026-01-05 21:53:45,755 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:45,810 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:45,819 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:45,824 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:45,825 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:45,825 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_12，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:45,833 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:45,833 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:45,833 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:45,833 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:45,833 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:45,833 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:45,833 - src.agents.adaptive_agent - INFO - 自适应代理 ada_12 初始化完成
+2026-01-05 21:53:45,836 - src.agents.adaptive_agent - INFO - 开始为学生 12 运行评估 #1, 时间: 2026-01-05 21:53:45.836904
+2026-01-05 21:53:45,837 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:45,891 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:45,897 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:45,903 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:45,903 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:45,903 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_13，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:45,911 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:45,911 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:45,911 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:45,912 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:45,912 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:45,912 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:45,912 - src.agents.adaptive_agent - INFO - 自适应代理 ada_13 初始化完成
+2026-01-05 21:53:45,915 - src.agents.adaptive_agent - INFO - 开始为学生 13 运行评估 #1, 时间: 2026-01-05 21:53:45.915699
+2026-01-05 21:53:45,916 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:45,970 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:45,980 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:45,986 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:45,986 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:45,987 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_14，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:45,995 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:45,995 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:45,995 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:45,995 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:45,995 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:45,995 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:45,995 - src.agents.adaptive_agent - INFO - 自适应代理 ada_14 初始化完成
+2026-01-05 21:53:45,998 - src.agents.adaptive_agent - INFO - 开始为学生 14 运行评估 #1, 时间: 2026-01-05 21:53:45.998824
+2026-01-05 21:53:45,999 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:46,053 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:46,061 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:46,067 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:46,067 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:46,067 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_15，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:46,076 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:46,076 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:46,076 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:46,076 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:46,076 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:46,076 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:46,076 - src.agents.adaptive_agent - INFO - 自适应代理 ada_15 初始化完成
+2026-01-05 21:53:46,079 - src.agents.adaptive_agent - INFO - 开始为学生 15 运行评估 #1, 时间: 2026-01-05 21:53:46.079894
+2026-01-05 21:53:46,080 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:46,134 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:46,144 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:46,150 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:46,150 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:46,150 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_16，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:46,158 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:46,158 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:46,158 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:46,158 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:46,158 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:46,158 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:46,158 - src.agents.adaptive_agent - INFO - 自适应代理 ada_16 初始化完成
+2026-01-05 21:53:46,162 - src.agents.adaptive_agent - INFO - 开始为学生 16 运行评估 #1, 时间: 2026-01-05 21:53:46.162254
+2026-01-05 21:53:46,162 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:46,217 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:46,223 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:46,229 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:46,229 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:46,229 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_17，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:46,238 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:46,238 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:46,238 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:46,238 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:46,238 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:46,238 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:46,238 - src.agents.adaptive_agent - INFO - 自适应代理 ada_17 初始化完成
+2026-01-05 21:53:46,241 - src.agents.adaptive_agent - INFO - 开始为学生 17 运行评估 #1, 时间: 2026-01-05 21:53:46.241961
+2026-01-05 21:53:46,242 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:46,297 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:46,304 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:46,310 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:46,310 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:46,310 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_18，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:46,319 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:46,319 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:46,319 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:46,319 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:46,319 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:46,319 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:46,319 - src.agents.adaptive_agent - INFO - 自适应代理 ada_18 初始化完成
+2026-01-05 21:53:46,323 - src.agents.adaptive_agent - INFO - 开始为学生 18 运行评估 #1, 时间: 2026-01-05 21:53:46.323202
+2026-01-05 21:53:46,323 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:46,379 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:46,387 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:46,393 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:46,393 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:46,393 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_19，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:46,401 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:46,402 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:46,402 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:46,402 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:46,402 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:46,402 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:46,402 - src.agents.adaptive_agent - INFO - 自适应代理 ada_19 初始化完成
+2026-01-05 21:53:46,406 - src.agents.adaptive_agent - INFO - 开始为学生 19 运行评估 #1, 时间: 2026-01-05 21:53:46.406366
+2026-01-05 21:53:46,407 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:46,462 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:46,471 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:46,478 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:46,478 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:46,478 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_20，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:46,486 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:46,486 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:46,486 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:46,486 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:46,486 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:46,486 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:46,486 - src.agents.adaptive_agent - INFO - 自适应代理 ada_20 初始化完成
+2026-01-05 21:53:46,490 - src.agents.adaptive_agent - INFO - 开始为学生 20 运行评估 #1, 时间: 2026-01-05 21:53:46.490929
+2026-01-05 21:53:46,491 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:46,546 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:46,554 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:46,560 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:46,560 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:46,560 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_21，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:46,568 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:46,569 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:46,569 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:46,569 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:46,569 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:46,569 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:46,569 - src.agents.adaptive_agent - INFO - 自适应代理 ada_21 初始化完成
+2026-01-05 21:53:46,572 - src.agents.adaptive_agent - INFO - 开始为学生 21 运行评估 #1, 时间: 2026-01-05 21:53:46.572900
+2026-01-05 21:53:46,573 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:46,627 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:46,637 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:46,642 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:46,642 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:46,642 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_22，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:46,651 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:46,651 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:46,651 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:46,651 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:46,651 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:46,651 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:46,651 - src.agents.adaptive_agent - INFO - 自适应代理 ada_22 初始化完成
+2026-01-05 21:53:46,655 - src.agents.adaptive_agent - INFO - 开始为学生 22 运行评估 #1, 时间: 2026-01-05 21:53:46.655069
+2026-01-05 21:53:46,655 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:46,709 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:46,718 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:46,723 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:46,723 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:46,723 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_23，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:46,732 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:46,732 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:46,732 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:46,732 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:46,732 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:46,732 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:46,732 - src.agents.adaptive_agent - INFO - 自适应代理 ada_23 初始化完成
+2026-01-05 21:53:46,736 - src.agents.adaptive_agent - INFO - 开始为学生 23 运行评估 #1, 时间: 2026-01-05 21:53:46.736281
+2026-01-05 21:53:46,736 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:46,791 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:46,793 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:46,795 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:46,795 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:46,795 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_24，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:46,803 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:46,803 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:46,803 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:46,803 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:46,803 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:46,803 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:46,803 - src.agents.adaptive_agent - INFO - 自适应代理 ada_24 初始化完成
+2026-01-05 21:53:46,807 - src.agents.adaptive_agent - INFO - 开始为学生 24 运行评估 #1, 时间: 2026-01-05 21:53:46.807363
+2026-01-05 21:53:46,807 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:46,862 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:46,865 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:46,867 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:46,867 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:46,867 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_25，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:46,875 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:46,876 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:46,876 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:46,876 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:46,876 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:46,876 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:46,876 - src.agents.adaptive_agent - INFO - 自适应代理 ada_25 初始化完成
+2026-01-05 21:53:46,880 - src.agents.adaptive_agent - INFO - 开始为学生 25 运行评估 #1, 时间: 2026-01-05 21:53:46.880103
+2026-01-05 21:53:46,880 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:46,935 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:46,937 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:46,938 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:46,938 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:46,938 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_26，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:46,946 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:46,947 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:46,947 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:46,947 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:46,947 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:46,947 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:46,947 - src.agents.adaptive_agent - INFO - 自适应代理 ada_26 初始化完成
+2026-01-05 21:53:46,950 - src.agents.adaptive_agent - INFO - 开始为学生 26 运行评估 #1, 时间: 2026-01-05 21:53:46.950738
+2026-01-05 21:53:46,951 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:47,005 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:47,008 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:47,009 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:47,009 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:47,009 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_27，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:47,018 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:47,018 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:47,018 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:47,018 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:47,018 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:47,018 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:47,018 - src.agents.adaptive_agent - INFO - 自适应代理 ada_27 初始化完成
+2026-01-05 21:53:47,022 - src.agents.adaptive_agent - INFO - 开始为学生 27 运行评估 #1, 时间: 2026-01-05 21:53:47.022230
+2026-01-05 21:53:47,022 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:47,077 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:47,086 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:47,091 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:47,092 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:47,092 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_28，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:47,100 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:47,100 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:47,100 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:47,100 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:47,100 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:47,100 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:47,100 - src.agents.adaptive_agent - INFO - 自适应代理 ada_28 初始化完成
+2026-01-05 21:53:47,104 - src.agents.adaptive_agent - INFO - 开始为学生 28 运行评估 #1, 时间: 2026-01-05 21:53:47.104861
+2026-01-05 21:53:47,105 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:47,160 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:47,168 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:47,174 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:47,174 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:47,174 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_29，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:47,182 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:47,182 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:47,182 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:47,183 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:47,183 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:47,183 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:47,183 - src.agents.adaptive_agent - INFO - 自适应代理 ada_29 初始化完成
+2026-01-05 21:53:47,187 - src.agents.adaptive_agent - INFO - 开始为学生 29 运行评估 #1, 时间: 2026-01-05 21:53:47.187073
+2026-01-05 21:53:47,187 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:47,241 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:47,251 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:47,257 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:47,257 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:47,257 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_30，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:47,267 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:47,267 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:47,267 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:47,267 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:47,267 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:47,267 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:47,267 - src.agents.adaptive_agent - INFO - 自适应代理 ada_30 初始化完成
+2026-01-05 21:53:47,271 - src.agents.adaptive_agent - INFO - 开始为学生 30 运行评估 #1, 时间: 2026-01-05 21:53:47.271867
+2026-01-05 21:53:47,272 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 21:53:47,331 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 21:53:47,340 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 21:53:47,346 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 21:53:47,346 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 21:53:47,347 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_31，使用模型 gpt-3.5-turbo
+2026-01-05 21:53:47,361 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 21:53:47,361 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 21:53:47,361 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 21:53:47,361 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 21:53:47,361 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 21:53:47,362 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 21:53:47,362 - src.agents.adaptive_agent - INFO - 自适应代理 ada_31 初始化完成
+2026-01-05 21:53:47,367 - src.agents.adaptive_agent - INFO - 开始为学生 31 运行评估 #1, 时间: 2026-01-05 21:53:47.367567
+2026-01-05 21:53:47,368 - src.agents.adaptive_agent - ERROR - 运行过程中出错: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 157, in run
+    first_question_details = get_problem_detail(candidate, self.env.dataset_name)
+TypeError: unhashable type: 'list'
+2026-01-05 22:05:02,102 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-01-05 22:05:02,102 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-01-05 22:05:02,103 - faiss.loader - INFO - Loading faiss.
+2026-01-05 22:05:02,131 - faiss.loader - INFO - Successfully loaded faiss.
+2026-01-05 22:05:02,140 - __main__ - ERROR - 加载配置失败: [Errno 2] No such file or directory: 'config/config.yaml'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/main.py", line 42, in load_config
+    with open(config_path, 'r', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'config/config.yaml'
+2026-01-05 22:05:02,141 - __main__ - INFO - 使用默认配置
+2026-01-05 22:05:02,175 - __main__ - INFO - 随机种子设置为: 42
+2026-01-05 22:05:02,175 - __main__ - INFO - 创建运行目录: results/moocradar/run_20260105_220502
+2026-01-05 22:05:16,197 - src.dataset.cat_dataset - INFO - 数据加载成功，学生数: 4072，问题数: 528，概念数: 35
+2026-01-05 22:05:16,197 - src.dataset.cat_dataset - INFO - 数据分割完成，训练集: 3257，验证集: 407，测试集: 408
+2026-01-05 22:05:16,197 - src.dataset.cat_dataset - INFO - 数据集初始化完成，学生数: 4072，问题数: 528
+2026-01-05 22:05:16,197 - __main__ - INFO - 数据集 moocradar 加载成功
+2026-01-05 22:05:16,197 - src.strategies.ada_strategy - INFO - 初始化自适应策略，使用模型: gpt-3.5-turbo
+2026-01-05 22:05:16,197 - __main__ - INFO - 开始运行自适应测试策略: ADA
+2026-01-05 22:05:16,780 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 22:05:18,101 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 22:05:18,107 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 22:05:18,107 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 22:05:18,107 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_0，使用模型 gpt-3.5-turbo
+2026-01-05 22:05:18,144 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 22:05:18,144 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 22:05:18,144 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 22:05:18,144 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 22:05:18,144 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 22:05:18,144 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 22:05:18,144 - src.agents.adaptive_agent - INFO - 自适应代理 ada_0 初始化完成
+2026-01-05 22:05:18,144 - src.agents.adaptive_agent - INFO - 开始为学生 0 运行评估 #1, 时间: 2026-01-05 22:05:18.144578
+2026-01-05 22:05:18,152 - src.llms.first_try - INFO - 开始选择首个问题
+2026-01-05 22:05:21,302 - httpx - INFO - HTTP Request: POST https://api.openai-hk.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-05 22:05:21,350 - src.models.gpt - INFO - API调用成功，耗时: 3.20秒
+2026-01-05 22:05:21,351 - src.llms.first_try - INFO - 选择结果: {'reason': '第3题关于地役权的法律规定，具有较高的知识点覆盖度，区分度也相对明显，非常适合用作教育推荐的试题。', 'question_index': 3}
+2026-01-05 22:05:22,064 - src.agents.adaptive_agent - ERROR - 运行过程中出错: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([])) is deprecated. Please ensure they have the same size.
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 167, in run
+    self.theta, self.selected, self.theta_avg = self.env.reset_with_users(sid, action, infos)
+  File "/home/Q24301218./LACAT-main/src/environment/env.py", line 174, in reset_with_users
+    self.state, _, self.observation, self.records, done, self.selected, self.theta = self.step(action, uid, infos)
+  File "/home/Q24301218./LACAT-main/src/environment/env.py", line 299, in step
+    reward, acc, auc, rate = self.reward(action, sid)
+  File "/home/Q24301218./LACAT-main/src/environment/env.py", line 407, in reward
+    loss = self.model.adaptest_update(self.tsdata)
+  File "/home/Q24301218./LACAT-main/src/models/irt_model.py", line 245, in adaptest_update
+    loss = self.loss_fn(pred, labels.float())
+  File "/home/Q24301218./anaconda3/envs/GenAL/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/Q24301218./anaconda3/envs/GenAL/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/Q24301218./anaconda3/envs/GenAL/lib/python3.10/site-packages/torch/nn/modules/loss.py", line 697, in forward
+    return F.binary_cross_entropy(
+  File "/home/Q24301218./anaconda3/envs/GenAL/lib/python3.10/site-packages/torch/nn/functional.py", line 3545, in binary_cross_entropy
+    raise ValueError(
+ValueError: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([])) is deprecated. Please ensure they have the same size.
+2026-01-05 22:05:22,141 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 22:05:22,148 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 22:05:22,154 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 22:05:22,154 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 22:05:22,154 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_1，使用模型 gpt-3.5-turbo
+2026-01-05 22:05:22,167 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 22:05:22,167 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 22:05:22,167 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 22:05:22,167 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 22:05:22,167 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 22:05:22,167 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 22:05:22,167 - src.agents.adaptive_agent - INFO - 自适应代理 ada_1 初始化完成
+2026-01-05 22:05:22,171 - src.agents.adaptive_agent - INFO - 开始为学生 1 运行评估 #1, 时间: 2026-01-05 22:05:22.171098
+2026-01-05 22:05:22,179 - src.llms.first_try - INFO - 开始选择首个问题
+2026-01-05 22:05:26,138 - httpx - INFO - HTTP Request: POST https://api.openai-hk.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-05 22:05:26,141 - src.models.gpt - INFO - API调用成功，耗时: 3.96秒
+2026-01-05 22:05:26,141 - src.llms.first_try - INFO - 选择结果: {'reason': '第6题涵盖了合同履行后的财产返还及损失赔偿的规则，具有较高的知识点覆盖度与区分度，同时也能测试考生对违约责任的理解及应用能力。', 'question_index': 6}
+2026-01-05 22:05:26,149 - src.agents.adaptive_agent - ERROR - 运行过程中出错: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([])) is deprecated. Please ensure they have the same size.
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 167, in run
+    self.theta, self.selected, self.theta_avg = self.env.reset_with_users(sid, action, infos)
+  File "/home/Q24301218./LACAT-main/src/environment/env.py", line 174, in reset_with_users
+    self.state, _, self.observation, self.records, done, self.selected, self.theta = self.step(action, uid, infos)
+  File "/home/Q24301218./LACAT-main/src/environment/env.py", line 299, in step
+    reward, acc, auc, rate = self.reward(action, sid)
+  File "/home/Q24301218./LACAT-main/src/environment/env.py", line 407, in reward
+    loss = self.model.adaptest_update(self.tsdata)
+  File "/home/Q24301218./LACAT-main/src/models/irt_model.py", line 245, in adaptest_update
+    loss = self.loss_fn(pred, labels.float())
+  File "/home/Q24301218./anaconda3/envs/GenAL/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/Q24301218./anaconda3/envs/GenAL/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/Q24301218./anaconda3/envs/GenAL/lib/python3.10/site-packages/torch/nn/modules/loss.py", line 697, in forward
+    return F.binary_cross_entropy(
+  File "/home/Q24301218./anaconda3/envs/GenAL/lib/python3.10/site-packages/torch/nn/functional.py", line 3545, in binary_cross_entropy
+    raise ValueError(
+ValueError: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([])) is deprecated. Please ensure they have the same size.
+2026-01-05 22:05:26,228 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 22:05:26,236 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 22:05:26,242 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 22:05:26,242 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 22:05:26,242 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_2，使用模型 gpt-3.5-turbo
+2026-01-05 22:05:26,252 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 22:05:26,252 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 22:05:26,252 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 22:05:26,252 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 22:05:26,252 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 22:05:26,252 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 22:05:26,252 - src.agents.adaptive_agent - INFO - 自适应代理 ada_2 初始化完成
+2026-01-05 22:05:26,255 - src.agents.adaptive_agent - INFO - 开始为学生 2 运行评估 #1, 时间: 2026-01-05 22:05:26.255355
+2026-01-05 22:05:26,263 - src.llms.first_try - INFO - 开始选择首个问题
+2026-01-05 22:19:15,171 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-01-05 22:19:15,172 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-01-05 22:19:15,172 - faiss.loader - INFO - Loading faiss.
+2026-01-05 22:19:15,209 - faiss.loader - INFO - Successfully loaded faiss.
+2026-01-05 22:19:15,228 - __main__ - ERROR - 加载配置失败: [Errno 2] No such file or directory: 'config/config.yaml'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/main.py", line 42, in load_config
+    with open(config_path, 'r', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'config/config.yaml'
+2026-01-05 22:19:15,229 - __main__ - INFO - 使用默认配置
+2026-01-05 22:19:15,271 - __main__ - INFO - 随机种子设置为: 42
+2026-01-05 22:19:15,271 - __main__ - INFO - 创建运行目录: results/moocradar/run_20260105_221915
+2026-01-05 22:19:28,455 - src.dataset.cat_dataset - INFO - 数据加载成功，学生数: 4072，问题数: 528，概念数: 35
+2026-01-05 22:19:28,455 - src.dataset.cat_dataset - INFO - 数据分割完成，训练集: 3257，验证集: 407，测试集: 408
+2026-01-05 22:19:28,456 - src.dataset.cat_dataset - INFO - 数据集初始化完成，学生数: 4072，问题数: 528
+2026-01-05 22:19:28,456 - __main__ - INFO - 数据集 moocradar 加载成功
+2026-01-05 22:19:28,456 - src.strategies.ada_strategy - INFO - 初始化自适应策略，使用模型: gpt-3.5-turbo
+2026-01-05 22:19:28,456 - __main__ - INFO - 开始运行自适应测试策略: ADA
+2026-01-05 22:19:29,133 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 22:19:30,330 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 22:19:30,337 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 22:19:30,337 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 22:19:30,337 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_0，使用模型 gpt-3.5-turbo
+2026-01-05 22:19:30,383 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 22:19:30,383 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 22:19:30,383 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 22:19:30,383 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 22:19:30,383 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 22:19:30,383 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 22:19:30,383 - src.agents.adaptive_agent - INFO - 自适应代理 ada_0 初始化完成
+2026-01-05 22:19:30,383 - src.agents.adaptive_agent - INFO - 开始为学生 0 运行评估 #1, 时间: 2026-01-05 22:19:30.383502
+2026-01-05 22:19:30,392 - src.llms.first_try - INFO - 开始选择首个问题
+2026-01-05 22:19:36,466 - httpx - INFO - HTTP Request: POST https://api.openai-hk.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-05 22:19:36,516 - src.models.gpt - INFO - API调用成功，耗时: 6.12秒
+2026-01-05 22:19:36,516 - src.llms.first_try - INFO - 选择结果: {'reason': '第4题涵盖了质权与抵押权的区别及其法律规定，具有较高的知识点覆盖度和区分度，是一道具有代表性的题目。', 'question_index': 3}
+2026-01-05 22:19:37,149 - src.models.irt_model - INFO - 自适应更新完成，损失: 0.3111
+2026-01-05 22:20:54,783 - src.models.irt_model - INFO - 评估完成，准确率: 0.8069，AUC: 0.6710
+2026-01-05 22:20:55,179 - httpx - INFO - HTTP Request: POST https://api.openai-hk.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-01-05 22:20:55,209 - src.agents.adaptive_agent - ERROR - 运行过程中出错: 9
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 167, in run
+    self.theta, self.selected, self.theta_avg = self.env.reset_with_users(sid, action, infos)
+  File "/home/Q24301218./LACAT-main/src/environment/env.py", line 174, in reset_with_users
+    self.state, _, self.observation, self.records, done, self.selected, self.theta = self.step(action, uid, infos)
+  File "/home/Q24301218./LACAT-main/src/environment/env.py", line 365, in step
+    cov = self.compute_div_reward(self.know_map, self.selected, action)
+  File "/home/Q24301218./LACAT-main/src/environment/env.py", line 212, in compute_div_reward
+    for c in concept_map[qid]:
+KeyError: 9
+2026-01-05 22:20:55,295 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 22:20:55,304 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 22:20:55,309 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 22:20:55,309 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 22:20:55,310 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_1，使用模型 gpt-3.5-turbo
+2026-01-05 22:20:55,322 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 22:20:55,322 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 22:20:55,322 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 22:20:55,322 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 22:20:55,322 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 22:20:55,323 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 22:20:55,323 - src.agents.adaptive_agent - INFO - 自适应代理 ada_1 初始化完成
+2026-01-05 22:20:55,326 - src.agents.adaptive_agent - INFO - 开始为学生 1 运行评估 #1, 时间: 2026-01-05 22:20:55.325999
+2026-01-05 22:20:55,334 - src.llms.first_try - INFO - 开始选择首个问题
+2026-01-05 22:20:58,560 - httpx - INFO - HTTP Request: POST https://api.openai-hk.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-05 22:20:58,561 - src.models.gpt - INFO - API调用成功，耗时: 3.23秒
+2026-01-05 22:20:58,561 - src.llms.first_try - INFO - 选择结果: {'reason': '选项4涉及道德损失的赔偿规则，能全面覆盖违约责任相关知识点，并具有较高的区分度和难度', 'question_index': 3}
+2026-01-05 22:20:58,571 - src.models.irt_model - INFO - 自适应更新完成，损失: 2.2541
+2026-01-05 22:22:14,385 - src.models.irt_model - INFO - 评估完成，准确率: 0.8069，AUC: 0.6716
+2026-01-05 22:22:14,818 - httpx - INFO - HTTP Request: POST https://api.openai-hk.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-01-05 22:22:14,847 - src.agents.adaptive_agent - ERROR - 运行过程中出错: 16
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 167, in run
+    self.theta, self.selected, self.theta_avg = self.env.reset_with_users(sid, action, infos)
+  File "/home/Q24301218./LACAT-main/src/environment/env.py", line 174, in reset_with_users
+    self.state, _, self.observation, self.records, done, self.selected, self.theta = self.step(action, uid, infos)
+  File "/home/Q24301218./LACAT-main/src/environment/env.py", line 365, in step
+    cov = self.compute_div_reward(self.know_map, self.selected, action)
+  File "/home/Q24301218./LACAT-main/src/environment/env.py", line 212, in compute_div_reward
+    for c in concept_map[qid]:
+KeyError: 16
+2026-01-05 22:22:14,933 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 22:22:14,941 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 22:22:14,947 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 22:22:14,947 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 22:22:14,947 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_2，使用模型 gpt-3.5-turbo
+2026-01-05 22:22:14,959 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 22:22:14,959 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 22:22:14,959 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 22:22:14,959 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 22:22:14,959 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 22:22:14,960 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 22:22:14,960 - src.agents.adaptive_agent - INFO - 自适应代理 ada_2 初始化完成
+2026-01-05 22:22:14,964 - src.agents.adaptive_agent - INFO - 开始为学生 2 运行评估 #1, 时间: 2026-01-05 22:22:14.964102
+2026-01-05 22:22:14,981 - src.llms.first_try - INFO - 开始选择首个问题
+2026-01-05 22:22:18,663 - httpx - INFO - HTTP Request: POST https://api.openai-hk.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-05 22:22:18,665 - src.models.gpt - INFO - API调用成功，耗时: 3.68秒
+2026-01-05 22:22:18,666 - src.llms.first_try - INFO - 选择结果: {'reason': '第2题的习题涵盖多个知识点，包括心理健康、内分泌反应和临床症状的综合分析，难度适中且具备良好的区分度，是一项非常具代表性的题目。', 'question_index': 2}
+2026-01-05 22:22:18,677 - src.models.irt_model - INFO - 自适应更新完成，损失: 1.4251
+2026-01-05 22:23:36,750 - src.models.irt_model - INFO - 评估完成，准确率: 0.8069，AUC: 0.6719
+2026-01-05 22:23:37,164 - httpx - INFO - HTTP Request: POST https://api.openai-hk.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-01-05 22:23:37,185 - src.agents.adaptive_agent - ERROR - 运行过程中出错: 24
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 167, in run
+    self.theta, self.selected, self.theta_avg = self.env.reset_with_users(sid, action, infos)
+  File "/home/Q24301218./LACAT-main/src/environment/env.py", line 174, in reset_with_users
+    self.state, _, self.observation, self.records, done, self.selected, self.theta = self.step(action, uid, infos)
+  File "/home/Q24301218./LACAT-main/src/environment/env.py", line 365, in step
+    cov = self.compute_div_reward(self.know_map, self.selected, action)
+  File "/home/Q24301218./LACAT-main/src/environment/env.py", line 212, in compute_div_reward
+    for c in concept_map[qid]:
+KeyError: 24
+2026-01-05 22:23:37,296 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-05 22:23:37,305 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-05 22:23:37,311 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-05 22:23:37,311 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-05 22:23:37,311 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_3，使用模型 gpt-3.5-turbo
+2026-01-05 22:23:37,327 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo
+2026-01-05 22:23:37,328 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-05 22:23:37,328 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-05 22:23:37,328 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-05 22:23:37,328 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-05 22:23:37,328 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-05 22:23:37,328 - src.agents.adaptive_agent - INFO - 自适应代理 ada_3 初始化完成
+2026-01-05 22:23:37,332 - src.agents.adaptive_agent - INFO - 开始为学生 3 运行评估 #1, 时间: 2026-01-05 22:23:37.332689
+2026-01-05 22:23:37,345 - src.llms.first_try - INFO - 开始选择首个问题
+2026-01-05 22:23:39,512 - httpx - INFO - HTTP Request: POST https://api.openai-hk.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-05 22:23:39,514 - src.models.gpt - INFO - API调用成功，耗时: 2.17秒
+2026-01-05 22:23:39,514 - src.llms.first_try - INFO - 选择结果: {'reason': '第2题的难度适中，涉及法律知识和诽谤的具体标准，能够有效区分学生对相关法律知识的掌握程度，因此推荐该题。', 'question_index': 1}
+2026-01-05 22:23:39,526 - src.models.irt_model - INFO - 自适应更新完成，损失: 2.4424
+2026-01-06 11:04:26,280 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-01-06 11:04:26,280 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-01-06 11:04:26,280 - faiss.loader - INFO - Loading faiss.
+2026-01-06 11:04:26,320 - faiss.loader - INFO - Successfully loaded faiss.
+2026-01-06 11:04:26,329 - __main__ - ERROR - 加载配置失败: [Errno 2] No such file or directory: 'config/config.yaml'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/main.py", line 42, in load_config
+    with open(config_path, 'r', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'config/config.yaml'
+2026-01-06 11:04:26,330 - __main__ - INFO - 使用默认配置
+2026-01-06 11:04:26,330 - src.models.gpt - INFO - LLM全局配置已更新: {'mode': 'api', 'local_model_path': '../LLM/qwen3/', 'local_device': 'cuda:0'}
+2026-01-06 11:04:26,365 - __main__ - INFO - 随机种子设置为: 42
+2026-01-06 11:04:26,365 - __main__ - INFO - 创建运行目录: results/moocradar/run_20260106_110426
+2026-01-06 11:04:38,930 - src.dataset.cat_dataset - INFO - 数据加载成功，学生数: 4072，问题数: 528，概念数: 35
+2026-01-06 11:04:38,931 - src.dataset.cat_dataset - INFO - 数据分割完成，训练集: 3257，验证集: 407，测试集: 408
+2026-01-06 11:04:38,931 - src.dataset.cat_dataset - INFO - 数据集初始化完成，学生数: 4072，问题数: 528
+2026-01-06 11:04:38,931 - __main__ - INFO - 数据集 moocradar 加载成功
+2026-01-06 11:04:38,931 - src.strategies.ada_strategy - INFO - 初始化自适应策略，使用模型: gpt-3.5-turbo
+2026-01-06 11:04:38,931 - __main__ - INFO - 开始运行自适应测试策略: ADA
+2026-01-06 11:04:39,008 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-06 11:04:39,811 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-06 11:04:39,818 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-06 11:04:39,818 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-06 11:04:39,818 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_0，使用模型 gpt-3.5-turbo
+2026-01-06 11:04:39,973 - src.models.gpt - INFO - API客户端初始化成功，端点: https://api.openai-hk.com/v1
+2026-01-06 11:04:39,973 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo，模式: api
+2026-01-06 11:04:39,973 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-06 11:04:39,974 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-06 11:04:39,974 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-06 11:04:39,974 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-06 11:04:39,974 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-06 11:04:39,974 - src.agents.adaptive_agent - INFO - 自适应代理 ada_0 初始化完成
+2026-01-06 11:04:39,974 - src.agents.adaptive_agent - INFO - 开始为学生 0 运行评估 #1, 时间: 2026-01-06 11:04:39.974198
+2026-01-06 11:04:39,980 - src.llms.first_try - INFO - 开始选择首个问题
+2026-01-06 11:04:42,209 - httpx - INFO - HTTP Request: POST https://api.openai-hk.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-06 11:04:42,257 - src.models.gpt - INFO - API调用成功，耗时: 2.28秒
+2026-01-06 11:04:42,258 - src.llms.first_try - INFO - 选择结果: {'reason': '第3题关于地役权的说法，涵盖了民事权利相关的法律知识点，适合考察法律基础知识和区分度', 'question_index': 3}
+2026-01-06 11:04:42,872 - src.models.irt_model - INFO - 自适应更新完成，损失: 0.3111
+2026-01-06 11:05:55,946 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-01-06 11:05:55,946 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-01-06 11:05:55,946 - faiss.loader - INFO - Loading faiss.
+2026-01-06 11:05:55,974 - faiss.loader - INFO - Successfully loaded faiss.
+2026-01-06 11:05:55,983 - __main__ - ERROR - 加载配置失败: [Errno 2] No such file or directory: 'config/config.yaml'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/main.py", line 42, in load_config
+    with open(config_path, 'r', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'config/config.yaml'
+2026-01-06 11:05:55,984 - __main__ - INFO - 使用默认配置
+2026-01-06 11:05:55,984 - src.models.gpt - INFO - LLM全局配置已更新: {'mode': 'local', 'local_model_path': '/home/Q24301218./BloomAgent/LLM/qwen3/', 'local_device': 'cuda:1'}
+2026-01-06 11:05:56,017 - __main__ - INFO - 随机种子设置为: 42
+2026-01-06 11:05:56,017 - __main__ - INFO - 创建运行目录: results/moocradar/run_20260106_110556
+2026-01-06 11:06:10,826 - src.dataset.cat_dataset - INFO - 数据加载成功，学生数: 4072，问题数: 528，概念数: 35
+2026-01-06 11:06:10,826 - src.dataset.cat_dataset - INFO - 数据分割完成，训练集: 3257，验证集: 407，测试集: 408
+2026-01-06 11:06:10,827 - src.dataset.cat_dataset - INFO - 数据集初始化完成，学生数: 4072，问题数: 528
+2026-01-06 11:06:10,827 - __main__ - INFO - 数据集 moocradar 加载成功
+2026-01-06 11:06:10,827 - src.strategies.ada_strategy - INFO - 初始化自适应策略，使用模型: gpt-3.5-turbo
+2026-01-06 11:06:10,827 - __main__ - INFO - 开始运行自适应测试策略: ADA
+2026-01-06 11:06:10,903 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-06 11:06:11,835 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-06 11:06:11,841 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-06 11:06:11,842 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-06 11:06:11,842 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_0，使用模型 gpt-3.5-turbo
+2026-01-06 11:06:11,842 - src.models.gpt - INFO - 正在加载本地模型: /home/Q24301218./BloomAgent/LLM/qwen3/
+2026-01-06 11:06:13,715 - src.models.gpt - ERROR - ✗ 本地模型加载失败: CUDA out of memory. Tried to allocate 96.00 MiB. GPU 1 has a total capacity of 23.65 GiB of which 11.00 MiB is free. Process 3514865 has 822.00 MiB memory in use. Process 3514868 has 822.00 MiB memory in use. Process 1932267 has 16.95 GiB memory in use. Including non-PyTorch memory, this process has 5.06 GiB memory in use. Of the allocated memory 4.53 GiB is allocated by PyTorch, and 88.84 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-01-06 11:06:13,715 - src.models.gpt - INFO - 切换到API模式
+2026-01-06 11:06:13,762 - src.models.gpt - INFO - API客户端初始化成功，端点: https://api.openai-hk.com/v1
+2026-01-06 11:06:13,794 - src.models.gpt - INFO - API客户端初始化成功，端点: https://api.openai-hk.com/v1
+2026-01-06 11:06:13,795 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo，模式: api
+2026-01-06 11:06:13,795 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-06 11:06:13,795 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-06 11:06:13,795 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-06 11:06:13,795 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-06 11:06:13,795 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-06 11:06:13,795 - src.agents.adaptive_agent - INFO - 自适应代理 ada_0 初始化完成
+2026-01-06 11:06:13,795 - src.agents.adaptive_agent - INFO - 开始为学生 0 运行评估 #1, 时间: 2026-01-06 11:06:13.795865
+2026-01-06 11:06:13,803 - src.llms.first_try - INFO - 开始选择首个问题
+2026-01-06 11:06:16,726 - httpx - INFO - HTTP Request: POST https://api.openai-hk.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-06 11:06:16,771 - src.models.gpt - INFO - API调用成功，耗时: 2.97秒
+2026-01-06 11:06:16,771 - src.llms.first_try - INFO - 选择结果: {'reason': '第3题关于地役权的说法，符合相关法律规定，具备一定的法律知识深度和区分度，是个很好的选择题目。', 'question_index': 3}
+2026-01-06 11:06:26,670 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-01-06 11:06:26,670 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-01-06 11:06:26,671 - faiss.loader - INFO - Loading faiss.
+2026-01-06 11:06:26,698 - faiss.loader - INFO - Successfully loaded faiss.
+2026-01-06 11:06:26,707 - __main__ - ERROR - 加载配置失败: [Errno 2] No such file or directory: 'config/config.yaml'
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/main.py", line 42, in load_config
+    with open(config_path, 'r', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'config/config.yaml'
+2026-01-06 11:06:26,708 - __main__ - INFO - 使用默认配置
+2026-01-06 11:06:26,708 - src.models.gpt - INFO - LLM全局配置已更新: {'mode': 'local', 'local_model_path': '/home/Q24301218./BloomAgent/LLM/qwen3/', 'local_device': 'cuda:1'}
+2026-01-06 11:06:26,737 - __main__ - INFO - 随机种子设置为: 42
+2026-01-06 11:06:26,737 - __main__ - INFO - 创建运行目录: results/moocradar/run_20260106_110626
+2026-01-06 11:06:40,311 - src.dataset.cat_dataset - INFO - 数据加载成功，学生数: 4072，问题数: 528，概念数: 35
+2026-01-06 11:06:40,311 - src.dataset.cat_dataset - INFO - 数据分割完成，训练集: 3257，验证集: 407，测试集: 408
+2026-01-06 11:06:40,311 - src.dataset.cat_dataset - INFO - 数据集初始化完成，学生数: 4072，问题数: 528
+2026-01-06 11:06:40,311 - __main__ - INFO - 数据集 moocradar 加载成功
+2026-01-06 11:06:40,311 - src.strategies.ada_strategy - INFO - 初始化自适应策略，使用模型: gpt-3.5-turbo
+2026-01-06 11:06:40,311 - __main__ - INFO - 开始运行自适应测试策略: ADA
+2026-01-06 11:06:40,374 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-06 11:06:41,270 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-06 11:06:41,273 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-06 11:06:41,273 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-06 11:06:41,273 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_0，使用模型 gpt-3.5-turbo
+2026-01-06 11:06:41,273 - src.models.gpt - INFO - 正在加载本地模型: /home/Q24301218./BloomAgent/LLM/qwen3/
+2026-01-06 11:06:45,267 - src.models.gpt - INFO - ✓ 本地模型加载成功，设备: cuda:1
+2026-01-06 11:06:45,267 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo，模式: local
+2026-01-06 11:06:45,267 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-06 11:06:45,267 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-06 11:06:45,267 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-06 11:06:45,267 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-06 11:06:45,267 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-06 11:06:45,267 - src.agents.adaptive_agent - INFO - 自适应代理 ada_0 初始化完成
+2026-01-06 11:06:45,267 - src.agents.adaptive_agent - INFO - 开始为学生 0 运行评估 #1, 时间: 2026-01-06 11:06:45.267927
+2026-01-06 11:06:45,275 - src.llms.first_try - INFO - 开始选择首个问题
+2026-01-06 11:07:06,305 - src.models.gpt - INFO - 本地模型调用成功，耗时: 21.03秒
+2026-01-06 11:07:06,305 - src.llms.first_try - INFO - 选择结果: {'reason': '第4题区分度高，覆盖质权与抵押权的核心差异（客体、公示方法、登记要求），知识点全面且具有代表性', 'question_index': 4}
+2026-01-06 11:07:06,445 - src.models.irt_model - INFO - 自适应更新完成，损失: 3.1280
+2026-01-06 11:08:17,396 - src.models.irt_model - INFO - 评估完成，准确率: 0.8069，AUC: 0.6710
+2026-01-06 11:08:18,371 - httpx - INFO - HTTP Request: POST https://api.openai-hk.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-01-06 11:08:18,402 - src.agents.adaptive_agent - INFO - 开始迭代 #1, 学生 0
+2026-01-06 11:08:18,440 - src.utils.data_utils - WARNING - 找不到学生0对问题7的答案数据
+2026-01-06 11:08:18,477 - src.utils.data_utils - WARNING - 找不到学生0对问题7的答案数据
+2026-01-06 11:08:18,491 - src.llms.longterm_memory - INFO - 开始分析学生优势和劣势
+2026-01-06 11:08:44,243 - src.models.gpt - INFO - 本地模型调用成功，耗时: 25.75秒
+2026-01-06 11:08:44,243 - src.llms.longterm_memory - INFO - 分析结果: {'strength': '暂无明确优势记录', 'weakness': '对登记生效主义的核心概念存在误解，未能准确区分抵押权成立要件与对抗要件，误认为未登记的抵押权仍具备当事人间的约束力，反映出对物权变动规则及登记效力的法律逻辑掌握不牢。'}
+2026-01-06 11:08:44,243 - src.llms.short_memory - INFO - 开始分析最近答题情况
+2026-01-06 11:09:02,001 - src.models.gpt - INFO - 本地模型调用成功，耗时: 17.76秒
+2026-01-06 11:09:02,001 - src.llms.short_memory - INFO - 分析结果: {'thought': '学生误将登记生效主义的效力范围扩大至当事人之间，需明确区分抵押权成立要件（登记）与对抗要件（登记对抗第三人）。问题应聚焦登记生效主义下未登记抵押权的效力边界，通过判断题验证其对‘未经登记抵押权是否在当事人间有效’的理解。'}
+2026-01-06 11:09:02,003 - src.cat.cat_agent - INFO - 初始化CAT代理，使用模型: gpt-3.5-turbo
+2026-01-06 11:09:02,003 - src.models.gpt - INFO - 使用缓存的本地模型
+2026-01-06 11:09:02,003 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo，模式: local
+2026-01-06 11:09:02,003 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-06 11:09:02,003 - src.cat.cat_agent - INFO - 运行CAT代理选择问题
+2026-01-06 11:09:02,011 - src.llms.generator - INFO - 基于认知诊断选择问题
+2026-01-06 11:09:25,343 - src.models.gpt - INFO - 本地模型调用成功，耗时: 23.33秒
+2026-01-06 11:09:25,343 - src.llms.generator - INFO - 选择结果: {'reason': "学生当前的核心问题在于混淆登记生效主义与登记对抗主义的效力边界，误认为未登记抵押权在当事人间无效。候选题中关于登记对抗主义的定义（'登记对抗主义是指抵押权依当事人之间的合意即设定，但未经登记，不得对抗善意第三人'）直接对应其认知盲区，可精准检验其是否理解'未登记抵押权在当事人间是否有效'这一关键点。该题既覆盖登记效力核心知识点，又通过区分成立要件（合意）与对抗要件（登记）的逻辑关系，能有效衡量学生对物权变动规则的掌握程度，符合其当前学习需求。", 'question_index': 6}
+2026-01-06 11:09:25,344 - src.cat.cat_agent - INFO - CAT代理选择完成: {'reason': "学生当前的核心问题在于混淆登记生效主义与登记对抗主义的效力边界，误认为未登记抵押权在当事人间无效。候选题中关于登记对抗主义的定义（'登记对抗主义是指抵押权依当事人之间的合意即设定，但未经登记，不得对抗善意第三人'）直接对应其认知盲区，可精准检验其是否理解'未登记抵押权在当事人间是否有效'这一关键点。该题既覆盖登记效力核心知识点，又通过区分成立要件（合意）与对抗要件（登记）的逻辑关系，能有效衡量学生对物权变动规则的掌握程度，符合其当前学习需求。", 'question_index': 6}
+2026-01-06 11:09:25,358 - src.models.irt_model - INFO - 自适应更新完成，损失: 0.3128
+2026-01-06 11:10:39,319 - src.models.irt_model - INFO - 评估完成，准确率: 0.8069，AUC: 0.6710
+2026-01-06 11:10:39,907 - httpx - INFO - HTTP Request: POST https://api.openai-hk.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-01-06 11:10:39,930 - src.agents.adaptive_agent - ERROR - 运行过程中出错: 7
+Traceback (most recent call last):
+  File "/home/Q24301218./LACAT-main/src/agents/adaptive_agent.py", line 238, in run
+    _, rate, self.observation, self.records, done, self.selected, self.theta = self.env.step(action, sid, infos)
+  File "/home/Q24301218./LACAT-main/src/environment/env.py", line 365, in step
+    cov = self.compute_div_reward(self.know_map, self.selected, action)
+  File "/home/Q24301218./LACAT-main/src/environment/env.py", line 208, in compute_div_reward
+    for c in concept_map[q]:
+KeyError: 7
+2026-01-06 11:10:40,029 - src.models.irt_model - INFO - 初始化IRT模型，设备: cuda:0
+2026-01-06 11:10:40,038 - src.models.irt_model - INFO - 模型初始化完成，学生数: 4072，问题数: 528
+2026-01-06 11:10:40,043 - src.models.irt_model - INFO - 成功加载模型: ckpt/moocradar/irt.pt
+2026-01-06 11:10:40,043 - src.environment.env - INFO - 环境初始化完成, 数据集: moocradar, 项目数: 528
+2026-01-06 11:10:40,043 - src.agents.adaptive_agent - INFO - 初始化自适应代理 ada_1，使用模型 gpt-3.5-turbo
+2026-01-06 11:10:40,043 - src.models.gpt - INFO - 使用缓存的本地模型
+2026-01-06 11:10:40,043 - src.models.gpt - INFO - 初始化LLM接口，模型: gpt-3.5-turbo，模式: local
+2026-01-06 11:10:40,043 - src.llms.generator - INFO - 初始化生成器模块
+2026-01-06 11:10:40,043 - src.llms.longterm_memory - INFO - 初始化长期记忆模块
+2026-01-06 11:10:40,043 - src.llms.short_memory - INFO - 初始化短期记忆模块
+2026-01-06 11:10:40,043 - src.llms.first_try - INFO - 初始化首次尝试模块
+2026-01-06 11:10:40,043 - src.llms.critic - INFO - 初始化评论家模块
+2026-01-06 11:10:40,043 - src.agents.adaptive_agent - INFO - 自适应代理 ada_1 初始化完成
+2026-01-06 11:10:40,046 - src.agents.adaptive_agent - INFO - 开始为学生 1 运行评估 #1, 时间: 2026-01-06 11:10:40.046926
+2026-01-06 11:10:40,054 - src.llms.first_try - INFO - 开始选择首个问题
+2026-01-06 11:10:59,483 - src.models.gpt - INFO - 本地模型调用成功，耗时: 19.43秒
+2026-01-06 11:10:59,483 - src.llms.first_try - INFO - 选择结果: {'reason': '第4题涉及损害赔偿的具体规则，知识点覆盖度高且区分度明显，符合自适应测试对题目选拔的要求', 'question_index': 4}
+2026-01-06 11:10:59,495 - src.models.irt_model - INFO - 自适应更新完成，损失: 0.0593

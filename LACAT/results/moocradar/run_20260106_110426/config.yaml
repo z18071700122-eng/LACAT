@@ -1,0 +1,36 @@
+adaptest:
+  max_steps: 5
+  test_length: 10
+  threshold: 0.0
+dataset:
+  batch_size: 32
+  name: moocradar
+  shuffle: true
+  test_ratio: 0.1
+  train_ratio: 0.8
+  val_ratio: 0.1
+llm:
+  api_base_env: OPENAI_API_BASE
+  api_key_env: OPENAI_API_KEY
+  max_tokens: 1000
+  name: gpt-3.5-turbo
+  temperature: 0
+model:
+  irt:
+    batch_size: 32
+    device: cuda:0
+    epochs: 30
+    lr: 0.003
+  ncd:
+    batch_size: 32
+    device: cuda:0
+    epochs: 30
+    knowledge_dim: 16
+    lr: 0.002
+system:
+  checkpoint_dir: ckpt
+  data_dir: data
+  device: cuda:0
+  log_level: INFO
+  result_dir: results
+  seed: 42
